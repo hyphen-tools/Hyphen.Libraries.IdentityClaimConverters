@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>Hyphen.Libraries.IdentityClaimConverters</id>
+    <version>1.0.0</version>
+    <authors>Hyphen</authors>
+    <owners>makehyphen</owners>
+    <repository type="git" url="https://github.com/makehyphen/Hyphen.Libraries.IdentityClaimConverters" />
+    <license type="expression">MIT</license>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <releaseNotes></releaseNotes>
+    <description>This package provides Newtonsoft.JsonConverters for Identity.Claims</description>
+    <copyright>Copyright ©2021 Hyphen</copyright>
+    <tags>Newtonsoft Claims Identity </tags>
+    <language>en-US</language>
+	  <iconUrl>https://i.imgur.com/aztxXrN.png</iconUrl>
+    <dependencies>
+      <dependency id="Newtonsoft.Json" version="13.0.1" />
+    </dependencies>
+  </metadata>
+</package>

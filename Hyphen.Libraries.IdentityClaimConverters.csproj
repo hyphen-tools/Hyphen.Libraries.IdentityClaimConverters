@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <Description></Description>
+	<NuspecFile>Hyphen.Libraries.ClaimsConverter.nuspec</NuspecFile>
+	<PackageIcon>icon.png</PackageIcon>
+	<AssemblyName>Hyphen.Libraries.IdentityClaimConverters</AssemblyName>
+	<RootNamespace>Hyphen.Libraries.IdentityClaimConverters</RootNamespace>
+	<RepositoryUrl>https://github.com/makehyphen/Hyphen.Libraries.ClaimsConverter</RepositoryUrl>
+	<RepositoryType>git</RepositoryType>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Hyphen.Libraries.IdentityClaimConverters.nuspec">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>
