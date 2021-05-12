@@ -37,3 +37,11 @@ jobs:
       run: nuget pack *.csproj -Properties Configuration=Release -Version ${{ env.nuget_version }}
     - name: Publish
       run: dotnet nuget push **/*.nupkg --api-key ${{ secrets.PACKAGES_TOKEN }} --source "https://nuget.pkg.github.com/makehyphen/index.json"  
+    - uses: "marvinpinto/action-automatic-releases@latest"
+      with:
+        repo_token: "${{ secrets.PACKAGES_TOKEN }}"
+        automatic_release_tag: "latest"
+        prerelease: false
+        title: "Development Build"
+        files: |
+          *.*
