@@ -40,8 +40,8 @@ jobs:
     - uses: "marvinpinto/action-automatic-releases@latest"
       with:
         repo_token: "${{ secrets.PACKAGES_TOKEN }}"
-        automatic_release_tag: "latest"
+        automatic_release_tag: "Latest files for ${{ env.nuget_version }}"
         prerelease: false
-        title: "Development Build"
+        title: ${{ env.nuget_version }}
         files: |
-          *.*
+          *
