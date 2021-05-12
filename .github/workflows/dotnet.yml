@@ -43,3 +43,5 @@ jobs:
         automatic_release_tag: "latest"
         prerelease: false
         title: ${{ env.nuget_version }}
+        files: |
+          *.nupkg
