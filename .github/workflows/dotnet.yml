@@ -40,7 +40,7 @@ jobs:
     - uses: "marvinpinto/action-automatic-releases@latest"
       with:
         repo_token: "${{ secrets.PACKAGES_TOKEN }}"
-        automatic_release_tag: "Latest files for ${{ env.nuget_version }}"
+        automatic_release_tag: "latest"
         prerelease: false
         title: ${{ env.nuget_version }}
         files: |
